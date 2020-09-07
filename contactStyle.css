@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -32,7 +32,7 @@ ul {
 }
 
 
-/*navigation menu style*/
+/*nav styling*/
 
 .menuPpal {
     font-size: 17px;
@@ -48,14 +48,14 @@ ul {
 }
 
 
-/*left nav style*/
+/*left nav styling*/
 
 .menuPpal ul {
     display: flex;
 }
 
 .menuPpal ul li {
-    padding: 24px;
+    padding: 10px;
     margin: 10px;
 }
 
@@ -90,104 +90,60 @@ hr {
 
 .showcase {
     width: 100%;
-    height: 550px;
-    background-image: url(imagenes/playa.jpg);
+    height: 450px;
     padding: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    border: 3px solid white;
 }
 
-.showcase h1,
-.showcase p {
-    color: navy;
+.content h1 {
+    color: white;
     margin-bottom: 10px;
 }
 
-.button {
-    cursor: pointer;
-    display: inline-block;
-    border: 0;
-    padding: 10px 20px;
-    background: #54b9e7;
-    color: navy;
-    font-size: 15px;
-    border: 1px solid navy;
-    border-radius: 5px;
-    margin: 10px 0;
-}
-
-.button:hover {
-    opacity: .75;
-}
-
-
-/*news cards style*/
-
-.newsCards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    margin: 10px 0;
-}
-
-.newsCards img {
+.content {
     width: 100%;
-    height: 180px;
+    display: flex;
+    flex-direction: row;
 }
 
-.newsCards h3 {
-    font-size: 20px;
-    margin: 10px 0;
+.content img {
+    width: 320px;
+    margin-left: 40px;
+    padding: 30px;
 }
 
-.newsCards a {
-    padding: 10px 0;
-    color: #f2f2f2;
-    text-transform: uppercase;
-    display: inline-block;
-}
-
-.newsCards a:hover {
-    text-decoration: underline;
-}
-
-
-/* cards banner one*/
-
-.bannerOne {
-    display: grid;
-    width: 100%;
-    height: 350px;
-    background: url(def/musicbanner.png) no-repeat;
-    margin-bottom: 40px;
-}
-
-.bannerOne .content {
-    width: 40%;
-    padding: 80px 0 0 75px;
-}
-
-.bannerOne p,
-.bannerOne h2 {
-    margin: 10px 0 20px 0;
-}
-
-
-/* cards banner two*/
-
-.bannerTwo {
-    width: 100%;
-    height: 350px;
-    background: url(def/vonlandik.png) no-repeat center center/cover;
-}
-
-.bannerTwo .content {
-    width: 50%;
-    padding: 80px 0 0 75px;
+.content div {
     color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.content p {
+    position: relative;
+    width: 80%;
+    font-size: 25px;
+    justify-content: flex;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+.content a {
+    position: relative;
+    width: 80%;
+    font-size: 40px;
+    justify-content: flex;
+    text-align: center;
+    margin: 25px;
 }
 
 
@@ -251,41 +207,4 @@ hr {
     padding: 20px 0;
     text-align: center;
     padding-bottom: 25px;
-}
-
-
-/* styling (other devices)*/
-
-@media (max-width: 700px) {
-    .menuPpal ul.navMenu {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #2f3640;
-        height: 100%;
-        padding: 30px;
-        opacity: .9;
-        transform: translateX(-400px);
-        transition: transform .5s ease-in-out;
-    }
-    /*show the nav menu by clicking the bars*/
-    .menuPpal ul.navMenu.show {
-        transform: translateX(-20px);
-    }
-    /*continuing styling (other devices)*/
-    .menuPpal ul.navMenu li {
-        padding: 20px;
-        font-size: 14px;
-    }
-    .menuPpal ul.searchMenu {
-        margin-right: 50px;
-    }
-    .newsCards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .bannerOne .content,
-    .bannerTwo .content {
-        width: 80%;
-    }
 }
