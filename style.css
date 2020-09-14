@@ -81,12 +81,12 @@ ul {
     font-size: 1.5rem;
 }
 
-
-/*showcase styling*/
-
 hr {
     margin: 10px 0;
 }
+
+
+/*showcase styling*/
 
 .showcase {
     width: 100%;
@@ -104,6 +104,14 @@ hr {
 .showcase p {
     color: navy;
     margin-bottom: 10px;
+}
+
+.showcase h1 {
+    font-size: 50px;
+}
+
+.showcase p {
+    font-size: 24px;
 }
 
 .button {
@@ -135,7 +143,7 @@ hr {
 
 .newsCards img {
     width: 100%;
-    height: 180px;
+    height: 240px;
 }
 
 .newsCards h3 {
